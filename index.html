@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6f3f22">
+<meta name="description" content="Akshaypatra Foods – Food and Spices. Endless taste of tradition.">
+<title>Akshaypatra Foods | Food and Spices</title>
+<style>
+:root{--ink:#2d241e;--brown:#704326;--deep:#492b1b;--saffron:#c88735;--cream:#fff9ef;--paper:#fffdf8;--muted:#75685d;--line:#eadfce;--green:#286b45}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}.topbar{background:var(--deep);color:#fff4e6;text-align:center;padding:8px 12px;font-size:13px;letter-spacing:.04em}
+header{background:var(--cream);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brandmark{width:44px;height:44px;border:1.5px solid var(--saffron);border-radius:50%;display:grid;place-items:center;color:var(--brown);font-family:Georgia,serif;font-size:22px}.brandname{font-weight:850;letter-spacing:.09em;font-size:18px;line-height:1.2}.tagline{font-family:Georgia,serif;color:var(--brown);font-style:italic;font-size:12px}.navlinks{display:flex;gap:22px;align-items:center;font-size:14px}.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--saffron)}.cartpill{border:1px solid var(--brown);border-radius:999px;padding:8px 14px;color:var(--brown);font-weight:700}
+.hero{background:linear-gradient(110deg,rgba(44,27,16,.88),rgba(72,43,25,.62)),url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1800&q=85') center/cover;color:white}
+.hero-inner{padding:88px 0 92px;max-width:690px}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;color:#f2c47f;font-weight:750}.hero h1{font:500 clamp(38px,6vw,66px)/1.05 Georgia,serif;margin:15px 0}.hero p{font-size:18px;color:#fff0dc;max-width:570px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:5px;padding:12px 20px;background:var(--saffron);color:#24180f;font-weight:800;text-decoration:none;cursor:pointer}.btn.secondary{background:transparent;border:1px solid #fff0dc;color:#fff0dc}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.section{padding:66px 0}.section.soft{background:var(--cream)}.section-head{text-align:center;max-width:680px;margin:0 auto 34px}.kicker{color:var(--saffron);font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.section h2{font:500 clamp(30px,4vw,42px)/1.15 Georgia,serif;margin:8px 0 10px;color:var(--deep)}.section-head p{color:var(--muted);margin:0}
+.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.promise article{border:1px solid var(--line);background:#fff;padding:22px;border-radius:8px;text-align:center}.promise .symbol{font-size:26px}.promise h3{margin:8px 0 4px;font:500 21px Georgia,serif}.promise p{margin:0;color:var(--muted);font-size:14px}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:white;display:flex;flex-direction:column}.product-art{height:155px;background:linear-gradient(135deg,#f4e5cb,#e6c99e);display:grid;place-items:center;font:46px Georgia,serif;color:#81532e}.product-body{padding:17px;display:flex;flex-direction:column;gap:10px;flex:1}.product h3{margin:0;font:500 22px Georgia,serif}.product .desc{color:var(--muted);font-size:13px;min-height:38px}.product-row{display:flex;justify-content:space-between;align-items:center;gap:10px}.product select,.product input,.field input,.field textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:5px;background:#fff;font:inherit;color:var(--ink)}.price{font-weight:800;color:var(--brown)}.add{width:100%;background:var(--brown);color:white;border:0;border-radius:5px;padding:10px;font-weight:750;cursor:pointer}.empty{grid-column:1/-1;border:1px dashed #c9b69d;border-radius:8px;padding:28px;text-align:center;color:var(--muted);background:#fff}
+.cart-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:start}.panel{background:white;border:1px solid var(--line);border-radius:9px;padding:22px}.panel h3{font:500 24px Georgia,serif;margin:0 0 16px}.cartline{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.cartline small{display:block;color:var(--muted)}.qty{display:flex;align-items:center;gap:8px}.qty button{border:1px solid var(--line);background:var(--cream);border-radius:4px;width:28px;height:28px;cursor:pointer}.remove{border:0;background:none;color:#9b3b2d;cursor:pointer}.total{display:flex;justify-content:space-between;padding-top:16px;font-weight:850;font-size:19px}.field{margin:12px 0}.field label{display:block;font-size:13px;font-weight:750;margin-bottom:5px}.field textarea{min-height:78px;resize:vertical}.checkout{width:100%;background:#1f7a49;color:white;border:0;border-radius:5px;padding:14px;font-weight:850;font-size:15px;cursor:pointer}.note{font-size:12px;color:var(--muted);margin-top:9px}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.story-art{min-height:300px;border-radius:10px;background:linear-gradient(140deg,rgba(53,32,18,.15),rgba(53,32,18,.05)),url('https://images.unsplash.com/photo-1603905179139-8a8a3e8f1c0c?auto=format&fit=crop&w=1000&q=80') center/cover}.story p{color:var(--muted)}.story blockquote{font:italic 23px/1.35 Georgia,serif;color:var(--brown);margin:20px 0 0}
+footer{background:var(--deep);color:#fff0dc;padding:42px 0 22px}.footgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:24px}.footgrid h3{font:500 21px Georgia,serif}.footgrid p,.footgrid a{color:#e4d1bc;font-size:14px}.copyright{border-top:1px solid #72543e;margin-top:28px;padding-top:16px;color:#d4bda5;font-size:12px;text-align:center}
+@media(max-width:760px){.nav{min-height:68px}.navlinks{gap:12px}.navlinks a:not(.cartpill){display:none}.hero-inner{padding:66px 0}.promise,.products{grid-template-columns:1fr 1fr}.cart-layout,.story,.footgrid{grid-template-columns:1fr}.story-art{min-height:220px}}
+@media(max-width:480px){.products,.promise{grid-template-columns:1fr}.brandname{font-size:15px}.cartline{grid-template-columns:1fr auto}.cartline .lineprice{grid-column:1/-1;text-align:right}.section{padding:48px 0}}
+</style>
+</head>
+<body>
+<div class="topbar">A taste of tradition, made with care</div>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="brandmark">अ</span><span><span class="brandname">AKSHAYPATRA FOODS</span><br><span class="tagline">Endless taste of tradition</span></span></a>
+<nav class="navlinks"><a href="#products">Products</a><a href="#story">Our Story</a><a href="#contact">Contact</a><a class="cartpill" href="#order">Basket <span id="cartCount">0</span></a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap"><div class="hero-inner">
+<div class="eyebrow">Food and Spices</div><h1>Tradition you can taste.<br>Quality you can trust.</h1>
+<p>Discover the warmth of familiar flavours and the joy of sharing good food. Welcome to Akshaypatra Foods.</p>
+<div class="hero-actions"><a class="btn" href="#products">Explore products</a><a class="btn secondary" href="#story">Our story</a></div>
+</div></div></section>
+<section class="section"><div class="wrap"><div class="promise">
+<article><div class="symbol">✦</div><h3>Made with care</h3><p>Thoughtful preparation and attention to every detail.</p></article>
+<article><div class="symbol">❖</div><h3>Rooted in tradition</h3><p>Inspired by the flavours and food memories we cherish.</p></article>
+<article><div class="symbol">♡</div><h3>Shared with love</h3><p>For everyday meals, celebrations and family moments.</p></article>
+</div></div></section>
+<section class="section soft" id="products"><div class="wrap"><div class="section-head"><div class="kicker">Discover the range</div><h2>Our Products</h2><p>Choose your favourites and add them to your basket. Product names, pack sizes and prices will appear here once the catalogue is filled in.</p></div>
+<div class="products" id="productGrid"><div class="empty">The product catalogue is being set up. Add your confirmed products and prices in <b>products.js</b>.</div></div>
+</div></section>
+<section class="section" id="order"><div class="wrap"><div class="section-head"><div class="kicker">Simple and convenient</div><h2>Place your order</h2><p>Review your basket, share your delivery details and send the order to us on WhatsApp.</p></div>
+<div class="cart-layout"><div class="panel"><h3>Your basket</h3><div id="cartItems"><p class="note">Your basket is empty. Browse the products above to add items.</p></div><div class="total"><span>Order total</span><span id="grandTotal">₹0</span></div><p class="note">Delivery / courier charges, if applicable, will be confirmed separately.</p></div>
+<div class="panel"><h3>Customer details</h3><form id="orderForm">
+<div class="field"><label for="customer">Name *</label><input id="customer" required autocomplete="name" placeholder="Your full name"></div>
+<div class="field"><label for="phone">Mobile number *</label><input id="phone" required inputmode="tel" autocomplete="tel" placeholder="Your contact number"></div>
+<div class="field"><label for="address">Delivery address *</label><textarea id="address" required autocomplete="street-address" placeholder="Flat, building, area, city and PIN code"></textarea></div>
+<div class="field"><label for="remarks">Additional instructions (optional)</label><textarea id="remarks" placeholder="Preferred delivery time, landmark, etc."></textarea></div>
+<button class="checkout" type="submit">Send order on WhatsApp</button><p class="note">WhatsApp opens with your order message ready to send. Please review and tap Send in WhatsApp.</p>
+</form></div></div>
+</div></section>
+<section class="section soft" id="story"><div class="wrap story"><div class="story-art" role="img" aria-label="Indian spices and food preparation"></div><div><div class="kicker">A little about us</div><h2>Endless taste of tradition</h2><p>Akshaypatra Foods celebrates the flavours that bring people together. Our aim is to make it easy to discover and order food and spices that feel familiar, comforting and special.</p><blockquote>“Good food is not just served. It is remembered.”</blockquote></div></div></section>
+</main>
+<footer id="contact"><div class="wrap"><div class="footgrid">
+<div><h3>AKSHAYPATRA FOODS</h3><p>Food and Spices<br>Endless taste of tradition</p></div>
+<div><h3>Get in touch</h3><p>WhatsApp orders: <a href="https://wa.me/918976066676">+91 89760 66676</a></p><p>For product availability and delivery details, contact us on WhatsApp.</p></div>
+<div><h3>Order with ease</h3><p>Browse the catalogue, add products to your basket and send your order directly through WhatsApp.</p><a class="btn" href="https://wa.me/918976066676">Chat on WhatsApp</a></div>
+</div><div class="copyright">© <span id="year"></span> Akshaypatra Foods. All rights reserved.</div></div></footer>
+<script src="products.js"></script>
+<script>
+const WHATSAPP_NUMBER = "918976066676";
+const products = Array.isArray(window.AKSHAYPATRA_PRODUCTS) ? window.AKSHAYPATRA_PRODUCTS : [];
+const cart = new Map();
+const money = n => "₹" + Number(n).toLocaleString("en-IN",{maximumFractionDigits:2});
+document.getElementById("year").textContent = new Date().getFullYear();
+function renderProducts(){
+ const grid=document.getElementById("productGrid");
+ if(!products.length){grid.innerHTML='<div class="empty">The product catalogue is being set up. Add your confirmed products and prices in <b>products.js</b>.</div>';return;}
+ grid.innerHTML=products.map((p,i)=>`<article class="product"><div class="product-art">${p.symbol||"✦"}</div><div class="product-body"><h3>${escapeHtml(p.name)}</h3><div class="desc">${escapeHtml(p.description||"Prepared with care.")}</div><div class="product-row"><select id="pack-${i}" aria-label="Pack size for ${escapeHtml(p.name)}">${(p.packs||[]).map((x,j)=>`<option value="${j}">${escapeHtml(x.size)} — ${money(x.price)}</option>`).join("")}</select></div><button class="add" onclick="addToCart(${i})">Add to basket</button></div></article>`).join("");
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function addToCart(i){const p=products[i];if(!p||!p.packs?.length)return;const pack=p.packs[Number(document.getElementById("pack-"+i).value)];const key=i+"-"+pack.size;const old=cart.get(key);cart.set(key,{key,name:p.name,size:pack.size,price:Number(pack.price),qty:(old?.qty||0)+1});renderCart();document.getElementById("order").scrollIntoView({behavior:"smooth"});}
+function changeQty(key,delta){const item=cart.get(key);if(!item)return;item.qty+=delta;if(item.qty<=0)cart.delete(key);renderCart();}
+function removeItem(key){cart.delete(key);renderCart();}
+function renderCart(){
+ const host=document.getElementById("cartItems");let count=0,total=0;
+ if(!cart.size){host.innerHTML='<p class="note">Your basket is empty. Browse the products above to add items.</p>';}
+ else{host.innerHTML=[...cart.values()].map(x=>{count+=x.qty;total+=x.qty*x.price;return `<div class="cartline"><div><b>${escapeHtml(x.name)}</b><small>${escapeHtml(x.size)} · ${money(x.price)} each</small></div><div class="qty"><button type="button" aria-label="Decrease quantity" onclick="changeQty('${x.key}',-1)">−</button><b>${x.qty}</b><button type="button" aria-label="Increase quantity" onclick="changeQty('${x.key}',1)">+</button></div><div class="lineprice">${money(x.qty*x.price)} <button class="remove" type="button" onclick="removeItem('${x.key}')">Remove</button></div></div>`;}).join("");}
+ document.getElementById("cartCount").textContent=count;document.getElementById("grandTotal").textContent=money(total);
+}
+document.getElementById("orderForm").addEventListener("submit",e=>{
+ e.preventDefault();if(!cart.size){alert("Please add at least one product to your basket.");return;}
+ const name=document.getElementById("customer").value.trim(),phone=document.getElementById("phone").value.trim(),address=document.getElementById("address").value.trim(),remarks=document.getElementById("remarks").value.trim();
+ const lines=[...cart.values()];const total=lines.reduce((s,x)=>s+x.qty*x.price,0);
+ let msg=`*NEW ORDER – AKSHAYPATRA FOODS*\n\n*Customer:* ${name}\n*Mobile:* ${phone}\n*Address:* ${address}\n\n*Order details*\n`;
+ lines.forEach((x,i)=>{msg+=`${i+1}. ${x.name} (${x.size}) × ${x.qty} = ${money(x.qty*x.price)}\n`;});
+ msg+=`\n*Total: ${money(total)}*\n*Delivery:* To be confirmed`;
+ if(remarks)msg+=`\n*Instructions:* ${remarks}`;
+ window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,"_blank","noopener");
+});
+renderProducts();renderCart();
+</script>
+</body></html>
